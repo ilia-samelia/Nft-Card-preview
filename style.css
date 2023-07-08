@@ -1,0 +1,161 @@
+body {
+  background: var(--very-dark-blue-main-bg, #0d192c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Outfit";
+}
+
+.container {
+  width: 350px;
+  border-radius: 15px;
+  background: var(--very-dark-blue-card-bg, #15263f);
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.inner {
+  padding: 24px 24px;
+}
+
+.img-container {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.img-container img {
+  border-radius: 8px;
+}
+
+/* Icon hover start (.img-container class should be relative to .icon-view-logo class)*/
+
+.icon-view-logo {
+  position: absolute;
+  top: 0;
+  background-color: cyan;
+  border-radius: 8px;
+  width: 100%;
+  height: 99.3%;
+  opacity: 0;
+}
+
+.icon-view-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-view-logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* Icon hover end */
+
+.img-container img {
+  max-width: 100%;
+}
+
+.header {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.header:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.description {
+  color: #8bacd9;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+/* etherium logo, price and days left */
+
+.eth-logo-price-days-left {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.eth-logo-price {
+  display: flex;
+}
+
+.eth-logo {
+  margin-right: 8px;
+}
+
+.eth-price {
+  color: cyan;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.days-left-logo {
+  margin-right: 8px;
+}
+.days-left-logo-description {
+  display: flex;
+}
+
+.days-left-description {
+  color: #8bacd9;
+  font-family: Outfit;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* hr styles */
+
+hr {
+  border: none;
+  background-color: #2e405a;
+  height: 1px;
+  margin-bottom: 16px;
+}
+
+/* creation of author */
+
+.creation-of-author-logo {
+  display: flex;
+  align-items: center;
+}
+
+.author-logo img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.creation-of {
+  color: #8bacd9;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 16px;
+  margin-right: 5px;
+}
+
+.creation-of-author-logo a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.creation-of-author-logo a:hover,
+a:active {
+  color: cyan;
+}
